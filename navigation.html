@@ -1,23 +1,5 @@
 <script>
-    /* When the user clicks on the button,
-    toggle between hiding and showing the dropdown content */
-    // function myFunction() {
-    //     document.getElementById("sidebar").classList.toggle("show");
-    // }
 
-    // // Close the dropdown menu if the user clicks outside of it
-    // window.onclick = function (event) {
-    //     if (!event.target.matches('.dropbtn')) {
-    //         var dropdowns = document.getElementsByClassName("sidebar");
-    //         var i;
-    //         for (i = 0; i < dropdowns.length; i++) {
-    //             var openDropdown = dropdowns[i];
-    //             if (openDropdown.classList.contains('show')) {
-    //                 openDropdown.classList.remove('show');
-    //             }
-    //         }
-    //     }
-    // }
     function showSidebar() {
         const sidebar = document.querySelector('.sidebar');
         sidebar.style.display = 'flex';
@@ -42,6 +24,7 @@
         </div>
 
         <a href="index.php"><img class="logo" src="images/logo.png"></a>
+
         <div>
 
             <ul class="navigation">
@@ -53,8 +36,8 @@
 
             </ul>
             <ul class="sidebar" id="sidebar">
-                <li onclick=hideSidebar() class="close"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                        viewBox="0 -960 960 960" width="24px" fill="##513D6E">
+                <li onclick=hideSidebar() class="close"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+                        viewBox="0 -960 960 960" width="50px" fill="##513D6E">
                         <path
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                     </svg></li>

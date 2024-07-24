@@ -33,19 +33,41 @@ h1 {
 }
 
 .header-content-wrapper {
+    /*prevents shorter pages from being too centered*/
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
+    flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
 }
 
+.header {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+}
+
 .header a {
 
     text-decoration: none;
+}
+
+.header-content {
+    margin: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
 }
 
 @media (max-width: 960px) {
@@ -56,14 +78,6 @@ h1 {
         height: 100%;
     }
 
-    .header {
-        display: flex;
-        justify-content: stretch;
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        margin: 0px;
-    }
 
     .header ul {
         list-style-type: none;
@@ -85,6 +99,7 @@ h1 {
         visibility: hidden;
     }
 
+
 }
 
 @media (min-width: 960px) {
@@ -94,16 +109,13 @@ h1 {
         height: 0px;
     }
 
-    .header-content {
-        margin: 40px 80px;
-        display: flex;
-        flex-direction: column;
-        width: 85%;
-        align-items: center;
-        justify-content: space-between;
-        gap: 40px;
-
+    .placeholder {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
     }
+
+
 
 
 
@@ -148,17 +160,20 @@ h1 {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 250px;
+    width: 500px;
     z-index: 999;
     background-color: #FEF6F2;
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-shrink: 0;
+    font-size: 36px;
 }
 
 .sidebar li {
-    width: 100%
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -173,6 +188,9 @@ h1 {
     width: 85%;
     max-width: 1400px;
     margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -195,6 +213,9 @@ h1 {
     margin: 0px 100px;
     max-width: 1000px;
     width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer {

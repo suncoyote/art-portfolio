@@ -11,35 +11,35 @@
 
 <body>
 
-<div class="header-content-wrapper">
-
-    <div class="header">
-    <div class="header-content">
-        
-        <?php
-        include 'navigation.html';
-        ?>
+<div class="content">
+    <div class="header-content-wrapper">
+    
+    
+    
+            <?php
+            include 'navigation.html';
+            ?>
+    
+    
+    <h1>Illustration</h1>
+    <div class="gallery" id="gallery">
+        <?php $dir = 'gallery-images/';
+                    $files = glob( $dir . '*.png');
+                    foreach( $files as $file) {
+                        echo '
+    
+                            <a href="'.$file.'" class="item"><img src="' . $file . '" ></a>
+    
+                        '
+                        ;
+    
+                    }
+            ?>
     </div>
+              
+    <div class="footer">
+        <?php include('footer.html')?>
     </div>
-
-<h1>Illustration</h1>
-<div class="gallery" id="gallery">
-    <?php $dir = 'gallery-images/';
-                $files = glob( $dir . '*.png');
-                foreach( $files as $file) {
-                    echo '
-                 
-                        <a href="'.$file.'" class="item"><img src="' . $file . '" ></a>
-                 
-                    '
-                    ;
-                    
-                } 
-        ?> 
-</div>
-            </div>
-<div class="footer">
-    <?php include('footer.html')?>
 </div>
 
 <script

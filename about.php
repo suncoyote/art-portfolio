@@ -13,14 +13,12 @@
 <body>
 
 <div class="header-content-wrapper">
-    <div class="header">
-    <div class="header-content">
+
         
         <?php
         include 'navigation.html';
         ?>
-    </div>
-    </div>
+
 
 
 <div class="content">

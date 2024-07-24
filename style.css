@@ -74,7 +74,8 @@ a {
 .gallery {
     padding:0px;
     columns:4;
-    column-gap:0px;
+    column-gap:10px;
+    column-width: 300px;
     max-width: 85%;
     margin: 0px;
 }
@@ -82,17 +83,16 @@ a {
 .gallery-item {
     width: 100%;
     padding:0px;
-    margin: 0px;
+    margin: 0px 20px 10px 0px;
     overflow: hidden; 
-    width:300px;
     border-radius: 3px;
 }
 
 
 .gallery img {
     display:block;
-    width: 300px;
-    margin:0px;
+    width: 100%;
+    margin: 0px;
     padding:0px;
     transition: transform .5s;
 

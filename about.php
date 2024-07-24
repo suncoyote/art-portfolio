@@ -24,7 +24,10 @@
     <h1>About</h1>
 <div class="content">
 
-    <p>ASPEN EYES is an independent illustrator and designer based in north Florida who frequently follows the stars out West and makes art about it. They seek to capture the majesty and mystery of the cosmos, of canyons, and the creatures inhabiting them. Although they typically work with digital tools or copic marker, they enjoy exploring new techniques in their free time.</p>
+    <p>ASPEN EYES is an independent illustrator and designer from Minnesota and based in north Florida who frequently follows the stars out West and makes art about it. They seek to capture the majesty and mystery of the cosmos, of canyons, and the creatures inhabiting them. Although they typically work with digital tools or copic marker, they enjoy exploring new techniques in their free time.</p>
+    <p>You can contact them at <b>aspeneyesart@gmail.com</b> for inquiries.</p>
+    <p>Past clients include Netflix, Thunder Lotus Games.</p>
+    
 </div>
 
 </body>

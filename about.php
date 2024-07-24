@@ -12,6 +12,7 @@
 
 <body>
 
+<div class="header-content-wrapper">
     <div class="header">
     <div class="header-content">
         
@@ -28,6 +29,7 @@
     <p>You can contact them at <b>aspeneyesart@gmail.com</b> for inquiries.</p>
     <p>Past clients include Netflix, Thunder Lotus Games.</p>
     
+</div>
 </div>
 <div class="footer">
     <?php include('footer.html')?>

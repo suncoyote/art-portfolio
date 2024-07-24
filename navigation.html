@@ -1,8 +1,71 @@
-<a href="index.php"><img class="logo" src="images/logo.png"></a>
-<ul>
-    <li><a href="index.php">Illustration</a></li>
-    <li><a href="products.php">Product Design</a></li>
-    <li><a href="about.php">About</a></li>
-    <li><a href="https://shop.aspeney.es" target="_blank">Shop</a></li>
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    // function myFunction() {
+    //     document.getElementById("sidebar").classList.toggle("show");
+    // }
 
-</ul>
+    // // Close the dropdown menu if the user clicks outside of it
+    // window.onclick = function (event) {
+    //     if (!event.target.matches('.dropbtn')) {
+    //         var dropdowns = document.getElementsByClassName("sidebar");
+    //         var i;
+    //         for (i = 0; i < dropdowns.length; i++) {
+    //             var openDropdown = dropdowns[i];
+    //             if (openDropdown.classList.contains('show')) {
+    //                 openDropdown.classList.remove('show');
+    //             }
+    //         }
+    //     }
+    // }
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    }
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+    }
+</script>
+
+
+<div class="header">
+    <div class="header-content">
+        <div class="nav_small">
+            <a href="javascript:showSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px"
+                    fill="#513D6E">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+
+            </a>
+        </div>
+
+        <a href="index.php"><img class="logo" src="images/logo.png"></a>
+        <div>
+
+            <ul class="navigation">
+                <li><a href="index.php">Illustration</a></li>
+                <li><a href="products.php">Product Design</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="https://shop.aspeney.es" target="_blank">Shop</a></li>
+
+
+            </ul>
+            <ul class="sidebar" id="sidebar">
+                <li onclick=hideSidebar() class="close"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="##513D6E">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></li>
+                <li><a href="index.php">Illustration</a></li>
+                <li><a href="products.php">Product Design</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="https://shop.aspeney.es" target="_blank">Shop</a></li>
+
+
+
+            </ul>
+        </div>
+    </div>
+</div>

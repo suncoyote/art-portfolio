@@ -11,7 +11,7 @@
 
 <body>
 
-
+<div class="header-content-wrapper">
 
     <div class="header">
     <div class="header-content">
@@ -37,6 +37,7 @@
                 } 
         ?> 
 </div>
+            </div>
 <div class="footer">
     <?php include('footer.html')?>
 </div>

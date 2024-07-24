@@ -39,6 +39,7 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
+
     align-items: center;
     margin: 0px;
 }
@@ -88,28 +89,17 @@ h1 {
 
 .gallery {
     padding: 0px;
-    columns: 4;
-    column-gap: 10px;
-    column-width: 300px;
-    max-width: 85%;
-    margin: 0px;
+    max-width: 1400px;
+    margin: 100px;
 }
 
-.gallery-item {
-    width: 100%;
-    padding: 0px;
-    margin: 0px 20px 10px 0px;
-    overflow: hidden;
-    border-radius: 3px;
-}
 
 
 .gallery img {
-    display: block;
-    width: 100%;
     margin: 0px;
     padding: 0px;
     transition: transform .5s;
+    border-radius: 3px;
 
 }
 

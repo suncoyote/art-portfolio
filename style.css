@@ -5,23 +5,24 @@ body {
     justify-content:center;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    gap: 1rem;
-    justify-content: center;
-    margin:20px 300px;
-
-    
-
+    padding:0px;
+    columns:4;
+    max-width: 85%;
+    margin: 0px auto;
 }
 
+.gallery-item {
+    width: 100%;
+}
 .gallery img {
-    flex-basis:20;
-    max-height: 400px;
+    max-width: 300px;
     flex-shrink: 1;
+    margin:0px;
+    padding:0px;
+    border-radius: 3px;
 }
 

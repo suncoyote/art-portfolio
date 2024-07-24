@@ -21,7 +21,7 @@
     </div>
     </div>
 
-
+<h1>Illustration</h1>
 <div class="gallery" id="gallery">
     <?php $dir = 'gallery-images/';
                 $files = glob( $dir . '*.png');

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASPEN EYES | Portfolio</title>
+    <title>ASPEN EYES | Product Design</title>
     <link rel="stylesheet" href ="style.css">
     <link rel="stylesheet" href="js/node_modules/glightbox/src/postcss/glightbox.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,7 +21,7 @@
     </div>
     </div>
 
-
+<h1>Product Design</h1>
 <div class="gallery" id="gallery">
     <?php $dir = 'product-images/';
                 $files = glob( $dir . '*.png');

@@ -16,6 +16,9 @@ body {
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
+a {
+    color: #302C35;
+}
 .header{
     display:flex;
     justify-content: center;
@@ -52,18 +55,32 @@ body {
 .gallery {
     padding:0px;
     columns:4;
+    column-gap:0px;
     max-width: 85%;
-    margin: 0px auto;
+    margin: 0px;
 }
 
 .gallery-item {
     width: 100%;
-}
-.gallery img {
-    max-width: 300px;
-    flex-shrink: 1;
-    margin:0px;
+    margin:15px;
     padding:0px;
+    overflow: hidden; 
+    max-width:300px;
     border-radius: 3px;
 }
 
+
+.gallery img {
+    max-width: 300px;
+    margin:0px;
+    padding:0px;
+
+    transition: transform .5s;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+    overflow: hidden; 
+    border-radius: 3px;
+}

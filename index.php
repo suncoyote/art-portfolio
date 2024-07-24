@@ -7,10 +7,14 @@
     <link rel="stylesheet" href ="style.css">
 </head>
 <body>
-    <?php 
-        include 'navigation.html'; 
-
-    ?>
+    <div class="header">
+    <div class="header-content">
+        
+        <?php
+        include 'navigation.html';
+        ?>
+    </div>
+    </div>
 
 
 <div class="gallery">

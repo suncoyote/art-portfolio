@@ -53,5 +53,8 @@
 
 <script src="js/script.js"></script>
 </body>
+<div class="footer">
+    <?php include('footer.html')?>
+</div>
 
 </html>

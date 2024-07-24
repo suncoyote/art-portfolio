@@ -21,7 +21,12 @@
     </div>
     </div>
 
+
+<div class="content">
 <h1>Product Design</h1>
+<p>This is a portfolio of the work I have made alongside manufacturers over the years. I am passionate about not just putting my artwork on an object, but tailoring the design to the medium itself to showcase each unique set of materials and create something beautiful that can stand on its own as a singular item. </p>
+<p>If you're interested in purchasing products, please see <a href="https://shop.aspeney.es">my online shop</a> for what I have available at the moment!</p>
+</div>
 <div class="gallery" id="gallery">
     <?php $dir = 'product-images/';
                 $files = glob( $dir . '*.png');
@@ -39,6 +44,7 @@
                 } 
         ?> 
 </div>
+            
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>

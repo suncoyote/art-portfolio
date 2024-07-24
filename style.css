@@ -9,21 +9,22 @@ body {
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    color: #39353f;
+    color: #513D6E;
     font-family: "Cabin", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    background-color: #F6F3EC;
+    background-color: #FEF6F2;
+    font-size: 20px;
 }
 
 a {
-    color: #39353f;
+    color: #513D6E;
 }
 
 h1 {
-    color: #39353f;
+    color: #513D6E;
     text-transform: uppercase;
     text-align: center;
 
@@ -65,7 +66,8 @@ h1 {
     flex-shrink: 0;
     list-style-type: none;
     width: 180px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #513D6E;
+
     text-transform: uppercase;
     text-align: center;
     padding: 3px;
@@ -74,7 +76,7 @@ h1 {
 }
 
 .header li:hover {
-    border-bottom: 5px solid;
+    border-bottom: 5px solid #513D6E;
 }
 
 .logo {

@@ -13,14 +13,18 @@
     ?>
 
 
-
-<?php $dir = 'gallery-images/';
-        $files = glob( $dir . '*.png');
-        foreach( $files as $file) {
-            echo '<img class="artwork" src="' . $file . '">';
-            
-            
-        } 
-?> 
+<div class="gallery">
+    <?php $dir = 'gallery-images/';
+                $files = glob( $dir . '*.png');
+                foreach( $files as $file) {
+                    echo '
+                    <div class="gallery-item"> 
+                        <img src="' . $file . '">
+                    </div>';
+                    
+                    
+                } 
+        ?> 
+</div>
 </body>
 </html>

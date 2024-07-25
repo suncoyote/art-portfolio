@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
+html,
+body {
+    overflow-x: hidden;
+}
 
 
 body {
     padding: 0px;
+    margin: 0;
     display: flex;
-    margin: 0px;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -19,6 +23,9 @@ body {
     background-color: #FEF6F2;
     font-size: 20px;
     min-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+
 }
 
 a {
@@ -35,23 +42,20 @@ h1 {
 .header-content-wrapper {
     /*prevents shorter pages from being too centered*/
     margin: 0px;
-    padding: 0px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     width: 100vw;
-    flex-shrink: 0;
+
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+
 }
 
 .header {
-    display: flex;
-    justify-content: stretch;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
     margin: 0px;
+    display: flex;
+
 }
 
 .header a {
@@ -60,13 +64,12 @@ h1 {
 }
 
 .header-content {
-    margin: 40px 80px;
+    margin: 40px 80px 40px 80px auto;
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
 
 }
 
@@ -76,30 +79,45 @@ h1 {
     .nav_small {
         visibility: visible;
         height: 100%;
+        width: 55px;
+        margin-left: 20px;
     }
 
 
     .header ul {
         list-style-type: none;
+
     }
 
+
+
+
     .header-content {
-        margin: 80px 40px;
+
+        padding: 15px;
         display: flex;
         flex-direction: row;
         width: 100vw;
+        max-width: 100vw;
         height: 100%;
         align-items: center;
         justify-content: space-between;
-        gap: 40px;
+
 
     }
 
     .navigation {
         visibility: hidden;
+        width: 0px;
+
     }
 
+    .navigation-wrapper {
+        height: 10;
+        width: 75px;
+        margin: 0px;
 
+    }
 }
 
 @media (min-width: 960px) {
@@ -109,19 +127,20 @@ h1 {
         height: 0px;
     }
 
-    .placeholder {
-        visibility: hidden;
-        height: 0px;
-        width: 0px;
-    }
-
-
-
-
 
     .nav_small {
         visibility: hidden;
         height: 0;
+
+    }
+
+    .logo {
+        margin: 3rem 0rem;
+
+    }
+
+    .header {
+        margin-bottom: 3rem;
     }
 
     .navigation {
@@ -154,6 +173,9 @@ h1 {
 
 }
 
+.navigation-wrapper {
+    margin: 0px;
+}
 
 .sidebar {
     position: fixed;
@@ -161,6 +183,7 @@ h1 {
     left: 0;
     height: 100vh;
     width: 500px;
+    max-width: 100vw;
     z-index: 999;
     background-color: #FEF6F2;
     display: none;
@@ -169,6 +192,8 @@ h1 {
     justify-content: flex-start;
     flex-shrink: 0;
     font-size: 36px;
+    margin: 0px;
+    padding: 3rem;
 }
 
 .sidebar li {
@@ -178,25 +203,29 @@ h1 {
 
 .logo {
     width: 200px;
-    flex-shrink: 0;
+    flex-shrink: 2;
     flex-grow: 0;
     filter: invert(25%) sepia(21%) saturate(2669%) hue-rotate(253deg) brightness(89%) contrast(87%);
+
 }
 
 .gallery {
     padding: 0px;
+    margin-bottom: 3rem;
     width: 85%;
     max-width: 1400px;
-    margin: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    max-width: 1400px;
 }
 
 
 
 .gallery img {
     margin: 0px;
+
     padding: 0px;
     transition: transform .5s;
     border-radius: 3px;
@@ -210,18 +239,23 @@ h1 {
 }
 
 .content {
-    margin: 0px 100px;
-    max-width: 1000px;
+    margin: 0px 100px auto;
+    max-width: 100vw;
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.content p {
+    width: 100%;
+    max-width: 1300px;
+}
+
 .footer {
     background-color: #e7dbd5;
-    padding: 40px;
-    width: 100%;
+    padding: 40px 0px;
+    width: 100vw;
     margin: 0px;
     text-align: center;
 }

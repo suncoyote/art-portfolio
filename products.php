@@ -26,7 +26,7 @@
                 This is a portfolio of the work I have made alongside manufacturers over the years. I am passionate about not just putting my artwork on an object, but tailoring the design to the medium itself to showcase each unique set of materials and create something beautiful that can stand on its own as a singular item. </p>
             <p>
                 If you're interested in purchasing products, please see <a href="https://shop.aspeney.es">my online shop</a> for what I have available at the moment!</p>
-    </div>
+   
     <div class="gallery" id="gallery">
         <?php $dir = 'product-images/';
             $files = glob( $dir . '*.png');
@@ -42,6 +42,7 @@
     </div>
 
     </div>
+        </div>
 
     <script
     src="https://code.jquery.com/jquery-3.7.1.js"

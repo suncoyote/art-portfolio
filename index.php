@@ -11,7 +11,7 @@
 
 <body>
 
-<div class="content">
+
     <div class="header-content-wrapper">
     
     
@@ -20,7 +20,7 @@
             include 'navigation.html';
             ?>
     
-    
+    <div class="content">
     <h1>Illustration</h1>
     <div class="gallery" id="gallery">
         <?php $dir = 'gallery-images/';
@@ -37,10 +37,10 @@
             ?>
     </div>
               
-    <div class="footer">
-        <?php include('footer.html')?>
-    </div>
+
 </div>
+
+                </div>
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.js"
@@ -50,6 +50,10 @@
 <script src="js/jquery.justifiedGallery.js"></script>
 
 <script src="js/script.js"></script>
+
+<div class="footer">
+        <?php include('footer.html')?>
+    </div>
 </body>
 
 </html>
